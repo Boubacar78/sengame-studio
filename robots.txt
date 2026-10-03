@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boubacar78.github.io/sengame-studio/sitemap.xml
