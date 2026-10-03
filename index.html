@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SenGame Studio — Jeux Unity Sénégalais</title>
+
+    <meta name="description"
+          content="SenGame Studio — découvrez et téléchargez des jeux vidéo créés avec Unity au Sénégal.">
+
+    <meta name="keywords"
+          content="SenGame Studio, jeux Sénégal, jeux Unity, jeux vidéo Sénégal, gaming Sénégal">
+
+    <meta name="author"
+          content="SenGame Studio">
+
+    <meta name="theme-color"
+          content="#07101d">
+
+    <meta property="og:title"
+          content="SenGame Studio — Jeux Unity">
+
+    <meta property="og:description"
+          content="Découvrez les jeux vidéo créés avec Unity par SenGame Studio.">
+
+    <meta property="og:type"
+          content="website">
+
+    <link rel="icon"
+          href="assets/logo.svg"
+          type="image/svg+xml">
+
+    <link rel="manifest"
+          href="manifest.webmanifest">
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a href="#accueil"
+       class="brand">
+
+        <img src="assets/logo.svg"
+             alt="SenGame Studio"
+             width="42"
+             height="42">
+
+        <span>
+            SenGame <b>Studio</b>
+        </span>
+
+    </a>
+
+    <nav>
+
+        <a href="#jeux">Jeux</a>
+
+        <a href="#apropos">À propos</a>
+
+        <a href="#ajouter">Ajouter</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section id="accueil"
+         class="hero">
+
+    <div class="hero-copy">
+
+        <span class="badge">
+            🇸🇳 Studio indépendant
+        </span>
+
+        <h1>
+            Des jeux créés au Sénégal,
+            <br>
+            <span>pour le monde.</span>
+        </h1>
+
+        <p>
+            SenGame Studio rassemble des jeux vidéo
+            développés avec Unity.
+            Découvre, télécharge et partage
+            les créations du studio.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#jeux"
+               class="btn primary">
+
+                🎮 Voir les jeux
+
+            </a>
+
+            <a href="#ajouter"
+               class="btn secondary">
+
+                ＋ Ajouter un jeu
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="controller">
+            🎮
+        </div>
+
+        <strong>
+            Unity × Sénégal
+        </strong>
+
+        <span>
+            Création • Innovation • Gaming
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- JEUX -->
+
+<section id="jeux"
+         class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                CATALOGUE
+            </span>
+
+            <h2>
+                Nos jeux
+            </h2>
+
+        </div>
+
+
+        <div class="search-wrap">
+
+            <input
+                id="search"
+                type="search"
+                placeholder="Rechercher un jeu..."
+                aria-label="Rechercher un jeu">
+
+        </div>
+
+    </div>
+
+
+    <div id="games"
+         class="grid">
+
+    </div>
+
+
+    <div id="empty"
+         class="empty"
+         hidden>
+
+        Aucun jeu ne correspond
+        à votre recherche.
+
+    </div>
+
+</section>
+
+
+<!-- A PROPOS -->
+
+<section id="apropos"
+         class="info-section">
+
+    <div>
+
+        <span class="eyebrow">
+            LE STUDIO
+        </span>
+
+        <h2>
+            SenGame Studio
+        </h2>
+
+        <p>
+
+            Un espace dédié aux jeux Unity
+            et aux projets numériques inspirés
+            par le Sénégal.
+
+            Notre objectif est de créer des jeux
+            accessibles sur téléphone et ordinateur.
+
+        </p>
+
+    </div>
+
+
+    <div class="features">
+
+        <div>
+
+            📱
+
+            <b>
+                Mobile & PC
+            </b>
+
+            <span>
+                Design responsive
+            </span>
+
+        </div>
+
+
+        <div>
+
+            ⚡
+
+            <b>
+                Rapide
+            </b>
+
+            <span>
+                HTML, CSS & JavaScript
+            </span>
+
+        </div>
+
+
+        <div>
+
+            🇸🇳
+
+            <b>
+                Made in Sénégal
+            </b>
+
+            <span>
+                Identité locale
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AJOUTER -->
+
+<section id="ajouter"
+         class="section add-section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                GESTION LOCALE
+            </span>
+
+            <h2>
+                Ajouter un jeu
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="add-card">
+
+        <p>
+
+            Ajoute un jeu depuis ton navigateur.
+
+            Attention :
+            les jeux ajoutés ici sont enregistrés
+            uniquement sur cet appareil.
+
+            Pour rendre un jeu visible par tous,
+            ajoute-le dans <b>script.js</b>.
+
+        </p>
+
+
+        <form id="addForm">
+
+            <div class="form-grid">
+
+                <label>
+
+                    Nom du jeu
+
+                    <input
+                        name="title"
+                        required
+                        placeholder="Ex. Quiz Sénégal">
+
+                </label>
+
+
+                <label>
+
+                    Plateforme
+
+                    <select name="platform">
+
+                        <option>
+                            Android
+                        </option>
+
+                        <option>
+                            Windows
+                        </option>
+
+                        <option>
+                            WebGL
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+
+                    Catégorie
+
+                    <input
+                        name="category"
+                        placeholder="Quiz, aventure, éducatif...">
+
+                </label>
+
+
+                <label>
+
+                    Image URL
+
+                    <input
+                        name="image"
+                        placeholder="assets/mon-jeu.jpg">
+
+                </label>
+
+
+                <label class="wide">
+
+                    Lien de téléchargement
+
+                    <input
+                        name="download"
+                        type="url"
+                        required
+                        placeholder="https://...">
+
+                </label>
+
+
+                <label class="wide">
+
+                    Description
+
+                    <textarea
+                        name="description"
+                        rows="3"
+                        placeholder="Décris ton jeu...">
+                    </textarea>
+
+                </label>
+
+            </div>
+
+
+            <button
+                class="btn primary"
+                type="submit">
+
+                ＋ Ajouter au catalogue local
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div>
+
+        <strong>
+            SenGame Studio
+        </strong>
+
+        <span>
+            © <span id="year"></span>
+            — Jeux Unity sénégalais
+        </span>
+
+    </div>
+
+
+    <a href="#accueil">
+        Retour en haut ↑
+    </a>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
